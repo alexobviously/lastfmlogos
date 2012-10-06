@@ -16,4 +16,11 @@ CREATE TABLE `lastfm_artists` (
   `lastfm_uid` varchar(36) NOT NULL,
   `date_added` int(10) NOT NULL,
   PRIMARY KEY  (`idartist`)
-) ENGINE=InnoDB AUTO_INCREMENT=1601 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `lastfm_requests` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `artist_name` varchar(200) NOT NULL,
+  `requests` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
