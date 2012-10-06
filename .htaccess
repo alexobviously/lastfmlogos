@@ -1,8 +1,0 @@
-AuthName "Restricted Area" 
-AuthType Basic 
-AuthUserFile /Applications/XAMPP/xamppfiles/secret/.htpasswd
-AuthGroupFile /dev/null 
-
-<Files admin*.php>
-#require valid-user
-</Files>
