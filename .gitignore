@@ -3,7 +3,7 @@
 /logos/*.gif
 /logos/*.png
 Thumbs.db
-#Config
-DBConfig.class.php
-#
 ImageShack*
+#Other
+.DS_Store
+.htaccess
