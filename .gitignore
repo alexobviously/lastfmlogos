@@ -2,6 +2,7 @@
 /logos/*.jpg
 /logos/*.gif
 /logos/*.png
+/cache/*.png
 Thumbs.db
 ImageShack*
 #Other
