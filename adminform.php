@@ -2,7 +2,11 @@
 function consadd(line)
 {
 	var t = document.getElementById("cons").value;
-	document.getElementById("cons").value = "> "+line+"\n"+t;
+	var n = line.split("||");
+	var i = 0;
+	var s = "";
+	for(i=0;i<n.length;i++) if(n[i]!="") s += "> "+n[i]+"\n";
+	document.getElementById("cons").value = s+t;
 }
 function ajax(url, callbackFunction)
 {
@@ -23,6 +27,9 @@ function ajax(url, callbackFunction)
 
 function emptycache() {
 	ajax("?c=emptycache", consadd);
+}
+function emptyslavecache() {
+	ajax("?c=esc", consadd);
 }
 function filldb() {
 	consadd("Filling Artists Database. Please be patient, this could take some time.");
@@ -68,7 +75,7 @@ function help()
 }
 </script>
 <title>Lastfmlogos Admin Page</title>
-<button onclick="emptycache()">Empty Cache</button> <button onclick="clearlist()">Clear Artists List</button> <button onclick="filldb()">Fill Artists List</button> <button onclick="bans()">List Banned Users</button>
+<button onclick="emptycache()">Empty Cache</button> <button onclick="emptyslavecache()">Empty Cache on Slaves</button> <button onclick="clearlist()">Clear Artists List</button> <button onclick="filldb()">Fill Artists List</button> <button onclick="bans()">List Banned Users</button>
 <br />
 <br />
 <input name="comm" type="text" id="comm" size="64" />

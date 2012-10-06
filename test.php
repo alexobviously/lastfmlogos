@@ -1,23 +1,23 @@
 <?php
-/*$a = "adfdasg";
-$b = explode("_",$a);
-echo($b[0].", ".$b[1].", ".strlen($b[0]).", ".strlen($b[1]));*/
-
-/*exec('ps -A | grep filldb.php', $results);
-print_r($results);*/
-
-/*include_once('classes/Config.class.php');
-$db = Config::$dbInstance;
-for($i=0;$i<100;$i++)
+for($i=1;$i<=25;$i++)
 {
-$r = $db->execQuery("SELECT (UNIX_TIMESTAMP()-".microtime(true).");");
-echo(mysql_result($r,0).", ");
+	echo('<img src="http://localhost/lfl/banner.php?user=alexobviously&nb='.$i.'&type=overall&color=yellow&layout=OneCol&blackbg=on">');
+	echo('<img src="http://localhost/lfl/banner.php?user=alexobviously&nb='.$i.'&type=overall&color=yellow&layout=TwoCols&blackbg=on">');
+	//echo('<img src="http://localhost/lfl/banner.php?user=alexobviously&nb='.$i.'&type=overall&color=green&layout=OneCol&blackbg=on">');
+	//echo('<img src="http://localhost/lfl/banner.php?user=alexobviously&nb='.$i.'&type=overall&color=green&layout=TwoCols&blackbg=on">');
 }
-//$db->execQuery("DELETE FROM `lastfm_generations` WHERE `time`<UNIX_TIMESTAMP()-300",array());*/
-
-for($i=0;$i<5;$i++)
+/*function a($b)
 {
-	echo(microtime()." ");
-	sleep(1);
+	if($b>5)
+		return $b*2;
+	else
+		return false;
 }
+for($i=0;$i<9;$i++)
+{
+	if(($c=a($i)))
+		echo("B".$i.", ");
+	else
+		echo("A, ");
+}*/
 ?>

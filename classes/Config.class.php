@@ -1,6 +1,7 @@
 <?php
 //include_once("db/MySQLIDB.class.php");
 include_once("db/MySQLNative.class.php");
+include_once("Slaves.php");
 
 date_default_timezone_set('America/Montreal');
 /**
@@ -36,7 +37,7 @@ class Config {
 	const WATERMARK_H = 20;
 	
 	//Limit simultaneous banner generation
-	const MAX_GENERATIONS = 10; //Number of banners that can be generated at any one time
+	const MAX_GENERATIONS = 50; //Number of banners that can be generated at any one time
 	const WAIT_TIME = 1; //Seconds to wait between generation attempts (don't change this if there's no problem)
 	
 	//Enable requested logos functionality

@@ -11,8 +11,7 @@ function artistExist($name) {
 	$db = Config::$dbInstance;
 	
 	//Manual query to avoid loading all the column
-	$sql = "SELECT name ".
-			"FROM lastfm_artists where name = ?";
+	$sql = "SELECT name "."FROM lastfm_artists where name = ?";
 	
 	$it = $db->execQueryIterator($sql,array($name));
 	if($line = $it->getNext()) {
@@ -107,7 +106,7 @@ function emptycache()
 		}
 	}
 	$end = microtime(true);
-	echo $x." cached banners deleted in ".round(($end - $start),4)." seconds";
+	echo $x." cached banners deleted in ".round(($end - $start),3)." seconds";
 }
 function filldb()
 {
@@ -173,6 +172,22 @@ function clearrequests()
 	Artists::clearRequests();
 	echo "Requests cleared";
 }
+function slaves()
+{
+	if(ENABLE_SLAVES)
+		echo("Slaves are enabled on this server");
+	else echo("Slaves are disabled on this server");
+}
+function _emptySlaveCache($slaves)
+{
+	if(ENABLE_SLAVES)
+	{
+		$cl = emptySlaveCache($slaves);
+		echo("Deleted ".$cl[0]." entries from slavecache table||");
+		foreach($cl[1] as $_cl) echo("Cleared ".$_cl[1]." banners on slave ".$_cl[0]."||");
+	}
+	else echo("Slaves are disabled on this server");
+}
 function adminpage()
 {
 	include('adminform.php');
@@ -181,6 +196,7 @@ $c = isset($_GET['c'])?$_GET['c']:"console";
 switch($c)
 {
 	case "emptycache":
+	case "ec":
 		emptycache();
 		break;
 	case "filldb":
@@ -201,6 +217,13 @@ switch($c)
 	case "clearrequests":
 	case "cr":
 		clearrequests();
+		break;
+	case "slaves":
+		slaves();
+		break;
+	case "emptyslavecache":
+	case "esc":
+		_emptySlaveCache($slaves);
 		break;
 	case "console":
 		adminpage();

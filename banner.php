@@ -9,8 +9,8 @@ include_once($_PATH['classes'].'TwoColumnsLayout.class.php');
 include_once($_PATH['classes'].'DatabaseCache.class.php');
 include_once($_PATH['classes'].'Errors.class.php');
 include_once($_PATH['classes'].'Config.class.php');
-include("classes/util/colors.php");
-include("bans.php");
+include($_PATH['classes'].'util/colors.php');
+include('bans.php');
 for($i=0;$i<sizeof($bans);$i++)
 {
 	$bans[$i] = strtolower($bans[$i]);
@@ -78,9 +78,48 @@ if(!($color == 'white'||$color == 'black'||$color == 'gray'||in_array($color,$cn
 //Layouts
 if(!($layout == 'OneCol' || $layout == 'TwoCols'))
 	$layout = Config::DEFAULT_BANNER_LAYOUT;
+	
+//Is there a cached version of the banner on this server?
+$_fh = fopen("log.txt","a");
+$_ban = $user.'_'.$nb.'_'.$type.'_'.$color.'_'.$layout.($bbg?"_b":"");
+$cachefile = 'cache/'.$_ban.'.png';
+fwrite($_fh,"\n\n".$_ban);
+if(file_exists($cachefile))
+{
+	fwrite($_fh,"\nRedirecting to: ".$cachefile);
+	header("Location: ".$cachefile);
+	exit;
+}
 
+//Slaves
+if(ENABLE_SLAVES)
+{
+	//Is there a cached version of the banner on a slave server?
+	if(($sc=checkSlaveCache($_ban)))
+	{
+		fwrite($_fh,"\nSC: ".($sc=checkSlaveCache($_ban)));
+		fwrite($_fh,"\nRedirecting to: ".$sc."/cache/".$_ban.".png");
+		fclose($_fh);
+		header("Location: ".$sc."/cache/".$_ban.".png");
+		exit;
+	}
+	
+	//Pick a host to generate the new banner on
+	$h = rand(0,$total_weight-1);
+	fwrite($_fh,"\nRand: ".$h.", Host:".$hosts[$h]);
+	if($hosts[$h]!=false)
+	{
+		fwrite($_fh,"\nRedirecting to: ".$hosts[$h]."/banner.php?user=".$user."&nb=".$nb."&type=".$type."&color=".$color."&layout=".$layout.($bbg?"&blackbg=on":""));
+		fclose($_fh);
+		header("Location: ".$hosts[$h]."/banner.php?user=".$user."&nb=".$nb."&type=".$type."&color=".$color."&layout=".$layout.($bbg?"&blackbg=on":""));
+		addSlaveCache($hosts[$h],$_ban);
+		exit;
+	}
+}
+fclose($_fh);
 
 ////Cache initialisation
+//Mostly obsolete with new file and slave caching but I'll leave it here for now
 $cacheHandler = new DatabaseCache();
 
 $cacheHandler->setUser($user);

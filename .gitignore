@@ -8,3 +8,5 @@ ImageShack*
 #Other
 .DS_Store
 .htaccess
+/slave/*
+/slave2/*
