@@ -1,0 +1,9 @@
+#Images
+/logos/*.jpg
+/logos/*.gif
+/logos/*.png
+Thumbs.db
+#Config
+DBConfig.class.php
+#
+ImageShack*
