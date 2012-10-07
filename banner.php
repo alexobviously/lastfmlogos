@@ -32,7 +32,7 @@ while($curgen>Config::MAX_GENERATIONS)
 	$curgen = mysql_result($sqlres,0,"c");
 	sleep(Config::WAIT_TIME);
 	if(rand(0,9)==1)
-		$db->execQuery("delete from lastfm_generations where ".(int)microtime(true).">`time`+60");
+		$db->execQuery("delete from lastfm_generations where ".(int)microtime(true)."<`time`-60");
 }
 $db->execQuery("INSERT INTO  `lastfm_generations` (`time`) VALUES (".(int)$start.");",array());
 

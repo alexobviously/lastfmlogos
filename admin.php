@@ -102,7 +102,7 @@ function emptycache()
 		{
 			unlink("cache/".$files->getFilename());
 			$x++;
-			if($x%50==0) sleep(1);
+			if($x%500==0) sleep(1); //Pause every now and then for anti-crashing purposes
 		}
 	}
 	$end = microtime(true);
@@ -188,6 +188,14 @@ function _emptySlaveCache($slaves)
 	}
 	else echo("Slaves are disabled on this server");
 }
+function analysis()
+{
+	$db = Config::$dbInstance;
+	$sqlres = $db->execQuery("select count(`time`) as c from lastfm_generations");
+	$curgen = mysql_result($sqlres,0,"c");
+	$load = sys_getloadavg();
+	echo($curgen." : ".round($load[0],3)." : ".round($load[1],3));
+}
 function adminpage()
 {
 	include('adminform.php');
@@ -224,6 +232,10 @@ switch($c)
 	case "emptyslavecache":
 	case "esc":
 		_emptySlaveCache($slaves);
+		break;
+	case "analysis":
+	case "ana":
+		analysis();
 		break;
 	case "console":
 		adminpage();

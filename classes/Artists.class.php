@@ -48,28 +48,12 @@ class Artists {
 	 * @param string Name of the artist
 	 * @return Artist Info of the artist
 	 */
-	public static function getArtistByName($name) {
-		//$db = MySQLNative::getInstance();
-		$db = Config::$dbInstance;
-		
-		$sql = "SELECT * ".
-			"FROM lastfm_artists ".
-			"WHERE name = ?";
-		$values= array($name);
-		$it = $db->execQueryIterator($sql,$values);
-		
-		if($line = $it->getNext()) {
-			$artist = new Artist($line['name'],
-				$line['path_logo'],
-				$line['lastfm_uid'],
-				$line['idartist'],
-				$line['date_added']);
-				
-			return 	$artist;
-		}
-		else {
-			return null;
-		}
+	public static function getArtistByName($name)
+	{
+		$search = glob(self::$baseDirectoryLogos.$name.".{png,gif,jpg,jpeg}",GLOB_BRACE);
+		if(sizeof($search)>0)
+			return new Artist($name,(string)$search[0]);
+		else return false;
 	}
 	
 	/**
@@ -130,7 +114,7 @@ class Artists {
 	 */
 	public static function imageFromArtist(Artist $artist) {
 		$image = null;
-		$path = self::$baseDirectoryLogos.$artist->getPathLogo();
+		$path = $artist->getPathLogo();
 		
 		switch ($artist->getExtensionLogo()) {
 			case 'gif':

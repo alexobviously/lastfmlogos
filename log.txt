@@ -1,265 +1,196 @@
 
 
-alexobviously_4_overall_yellow_OneCol_b
+alexobviously_44_overall_green_OneCol_b
 
-alexobviously_2_overall_yellow_OneCol_b
+alexobviously_48_overall_lightblue_TwoCols_b
+Redirecting to: cache/alexobviously_48_overall_lightblue_TwoCols_b.png
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_44_overall_green_OneCol_b.png
 
-alexobviously_3_overall_yellow_OneCol_b
-Rand: 1, Host:
-Rand: 1, Host:
-Rand: 1, Host:
+alexobviously_40_overall_yellow_OneCol_b
 
-alexobviously_1_overall_yellow_OneCol_b
-Rand: 0, Host:
+alexobviously_40_overall_green_OneCol_b
+Redirecting to: cache/alexobviously_40_overall_yellow_OneCol_b.png
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_40_overall_green_OneCol_b.png
 
-alexobviously_5_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=5&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_40_overall_red_TwoCols
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_40_overall_red_TwoCols.png
 
-alexobviously_11_overall_white_OneCol
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=11&type=overall&color=white&layout=OneCol
+alexobviously_40_overall_lightblue_TwoCols_b
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_40_overall_lightblue_TwoCols_b.png
 
-alexobviously_4_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=4&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_40_overall_yellow_OneCol_b
+Redirecting to: cache/alexobviously_40_overall_yellow_OneCol_b.png
 
-alexobviously_5_overall_yellow_OneCol_b
+alexobviously_40_overall_green_OneCol_b
 
-alexobviously_1_overall_yellow_OneCol_b
+alexobviously_41_overall_lightblue_TwoCols_b
 
-alexobviously_2_overall_yellow_OneCol_b
+alexobviously_40_overall_lightblue_TwoCols_b
 
-alexobviously_3_overall_yellow_OneCol_b
-Rand: 0, Host:
-Rand: 0, Host:
-Rand: 1, Host:
-Rand: 1, Host:
+alexobviously_41_overall_yellow_OneCol_b
+Redirecting to: cache/alexobviously_41_overall_yellow_OneCol_b.png
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_41_overall_lightblue_TwoCols_b.png
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_40_overall_green_OneCol_b.png
 
-alexobviously_1_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=1&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_40_overall_red_TwoCols
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_40_overall_lightblue_TwoCols_b.png
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_40_overall_red_TwoCols.png
 
-alexobviously_2_overall_yellow_OneCol_b
+alexobviously_49_overall_yellow_OneCol_b
+Redirecting to: cache/alexobviously_49_overall_yellow_OneCol_b.png
 
-alexobviously_4_overall_yellow_OneCol_b
+alexobviously_49_overall_lightblue_TwoCols_b
+SC: http://localhost/lfl/slave2
+Redirecting to: http://localhost/lfl/slave2/cache/alexobviously_49_overall_lightblue_TwoCols_b.png
 
-alexobviously_3_overall_yellow_OneCol_b
-Rand: 1, Host:
-Rand: 1, Host:
-Rand: 1, Host:
+alexobviously_50_overall_yellow_OneCol_b
 
-alexobviously_5_overall_yellow_OneCol_b
-Rand: 0, Host:
+alexobviously_49_overall_green_OneCol_b
+Redirecting to: cache/alexobviously_49_overall_green_OneCol_b.png
+SC: http://localhost/lfl/slave2
+Redirecting to: http://localhost/lfl/slave2/cache/alexobviously_50_overall_yellow_OneCol_b.png
 
-alexobviously_2_overall_yellow_OneCol_b
+alexobviously_49_overall_red_TwoCols
+Redirecting to: cache/alexobviously_49_overall_red_TwoCols.png
 
-alexobviously_1_overall_yellow_OneCol_b
+alexobviously_50_overall_lightblue_TwoCols_b
+Redirecting to: cache/alexobviously_50_overall_lightblue_TwoCols_b.png
 
-alexobviously_4_overall_yellow_OneCol_b
+alexobviously_41_overall_yellow_OneCol_b
 
-alexobviously_5_overall_yellow_OneCol_b
-Rand: 0, Host:
-Rand: 1, Host:
-Rand: 0, Host:
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=5&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_41_overall_lightblue_TwoCols_b
+Redirecting to: cache/alexobviously_41_overall_yellow_OneCol_b.png
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_41_overall_lightblue_TwoCols_b.png
 
-alexobviously_3_overall_yellow_OneCol_b
-Rand: 0, Host:
+alexobviously_41_overall_green_OneCol_b
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_41_overall_green_OneCol_b.png
 
-alexobviously_3_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=3&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_42_overall_yellow_OneCol_b
 
-alexobviously_1_overall_yellow_OneCol_b
+alexobviously_41_overall_red_TwoCols
+Redirecting to: cache/alexobviously_41_overall_red_TwoCols.png
+SC: http://localhost/lfl/slave2
+Redirecting to: http://localhost/lfl/slave2/cache/alexobviously_42_overall_yellow_OneCol_b.png
 
-alexobviously_5_overall_yellow_OneCol_b
-Rand: 0, Host:
+alexobviously_42_overall_lightblue_TwoCols_b
+Redirecting to: cache/alexobviously_42_overall_lightblue_TwoCols_b.png
 
-alexobviously_2_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=5&type=overall&color=yellow&layout=OneCol&blackbg=on
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=2&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_42_overall_green_OneCol_b
+Redirecting to: cache/alexobviously_42_overall_green_OneCol_b.png
 
-alexobviously_4_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=4&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_42_overall_red_TwoCols
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_42_overall_red_TwoCols.png
 
-alexobviously_1_overall_yellow_TwoCols_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=1&type=overall&color=yellow&layout=TwoCols&blackbg=on
+alexobviously_40_overall_yellow_OneCol_b
 
-alexobviously_3_overall_yellow_TwoCols_b
+alexobviously_40_overall_green_OneCol_b
 
-alexobviously_2_overall_yellow_OneCol_b
+alexobviously_41_overall_yellow_OneCol_b
+Redirecting to: cache/alexobviously_40_overall_yellow_OneCol_b.png
+Redirecting to: cache/alexobviously_41_overall_yellow_OneCol_b.png
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_40_overall_green_OneCol_b.png
 
-alexobviously_1_overall_yellow_OneCol_b
-Rand: 1, Host:
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=2&type=overall&color=yellow&layout=OneCol&blackbg=on
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=1&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_41_overall_lightblue_TwoCols_b
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_41_overall_lightblue_TwoCols_b.png
 
-alexobviously_2_overall_yellow_TwoCols_b
+alexobviously_40_overall_red_TwoCols
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_40_overall_red_TwoCols.png
 
-alexobviously_3_overall_yellow_OneCol_b
-Rand: 1, Host:
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=2&type=overall&color=yellow&layout=TwoCols&blackbg=on
+alexobviously_40_overall_lightblue_TwoCols_b
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_40_overall_lightblue_TwoCols_b.png
 
-alexobviously_4_overall_yellow_OneCol_b
-Rand: 0, Host:
+alexobviously_41_overall_green_OneCol_b
 
-alexobviously_4_overall_yellow_TwoCols_b
-Rand: 1, Host:
+alexobviously_41_overall_red_TwoCols
+Redirecting to: cache/alexobviously_41_overall_red_TwoCols.png
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_41_overall_green_OneCol_b.png
 
-alexobviously_5_overall_yellow_OneCol_b
-Rand: 0, Host:
+alexobviously_42_overall_yellow_OneCol_b
 
-alexobviously_5_overall_yellow_TwoCols_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=5&type=overall&color=yellow&layout=TwoCols&blackbg=on
+alexobviously_42_overall_lightblue_TwoCols_b
+Redirecting to: cache/alexobviously_42_overall_lightblue_TwoCols_b.png
 
-alexobviously_6_overall_yellow_OneCol_b
-Rand: 0, Host:
+alexobviously_42_overall_green_OneCol_b
+Redirecting to: cache/alexobviously_42_overall_green_OneCol_b.png
 
-alexobviously_6_overall_yellow_TwoCols_b
-Rand: 0, Host:
+alexobviously_42_overall_red_TwoCols
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_42_overall_red_TwoCols.png
+SC: http://localhost/lfl/slave2
+Redirecting to: http://localhost/lfl/slave2/cache/alexobviously_42_overall_yellow_OneCol_b.png
 
-alexobviously_7_overall_yellow_OneCol_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=7&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_43_overall_lightblue_TwoCols_b
+Redirecting to: cache/alexobviously_43_overall_lightblue_TwoCols_b.png
 
-alexobviously_7_overall_yellow_TwoCols_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=7&type=overall&color=yellow&layout=TwoCols&blackbg=on
+alexobviously_43_overall_yellow_OneCol_b
 
-alexobviously_8_overall_yellow_OneCol_b
-Rand: 1, Host:
+alexobviously_43_overall_green_OneCol_b
+Redirecting to: cache/alexobviously_43_overall_yellow_OneCol_b.png
+Redirecting to: cache/alexobviously_43_overall_green_OneCol_b.png
 
-alexobviously_8_overall_yellow_TwoCols_b
-Rand: 0, Host:
+alexobviously_43_overall_red_TwoCols
 
-alexobviously_9_overall_yellow_OneCol_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=9&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_44_overall_yellow_OneCol_b
+SC: http://localhost/lfl/slave
+SC: http://localhost/lfl/slave2
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_44_overall_yellow_OneCol_b.png
+Redirecting to: http://localhost/lfl/slave2/cache/alexobviously_43_overall_red_TwoCols.png
 
-alexobviously_9_overall_yellow_TwoCols_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=9&type=overall&color=yellow&layout=TwoCols&blackbg=on
+alexobviously_44_overall_lightblue_TwoCols_b
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_44_overall_lightblue_TwoCols_b.png
 
-alexobviously_10_overall_yellow_OneCol_b
-Rand: 0, Host:
+alexobviously_44_overall_green_OneCol_b
+SC: http://localhost/lfl/slave
+Redirecting to: http://localhost/lfl/slave/cache/alexobviously_44_overall_green_OneCol_b.png
 
-alexobviously_10_overall_yellow_TwoCols_b
-Rand: 0, Host:
+alexobviously_45_overall_yellow_OneCol_b
+Redirecting to: cache/alexobviously_45_overall_yellow_OneCol_b.png
 
-alexobviously_11_overall_yellow_OneCol_b
-Rand: 1, Host:
+alexobviously_44_overall_red_TwoCols
 
-alexobviously_11_overall_yellow_TwoCols_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=11&type=overall&color=yellow&layout=TwoCols&blackbg=on
+alexobviously_45_overall_lightblue_TwoCols_b
+Redirecting to: cache/alexobviously_45_overall_lightblue_TwoCols_b.png
+SC: http://localhost/lfl/slave2
+Redirecting to: http://localhost/lfl/slave2/cache/alexobviously_44_overall_red_TwoCols.png
 
-alexobviously_12_overall_yellow_OneCol_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=12&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_45_overall_green_OneCol_b
+Redirecting to: cache/alexobviously_45_overall_green_OneCol_b.png
 
-alexobviously_12_overall_yellow_TwoCols_b
-Rand: 0, Host:
+alexobviously_45_overall_red_TwoCols
+Redirecting to: cache/alexobviously_45_overall_red_TwoCols.png
 
-alexobviously_13_overall_yellow_OneCol_b
-Rand: 1, Host:
+alexobviously_46_overall_yellow_OneCol_b
+Redirecting to: cache/alexobviously_46_overall_yellow_OneCol_b.png
 
-alexobviously_13_overall_yellow_TwoCols_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=13&type=overall&color=yellow&layout=TwoCols&blackbg=on
+alexobviously_46_overall_lightblue_TwoCols_b
+Redirecting to: cache/alexobviously_46_overall_lightblue_TwoCols_b.png
 
-alexobviously_14_overall_yellow_OneCol_b
-Rand: 1, Host:
+alexobviously_46_overall_red_TwoCols
+Redirecting to: cache/alexobviously_46_overall_red_TwoCols.png
 
-alexobviously_14_overall_yellow_TwoCols_b
-Rand: 0, Host:
+alexobviously_46_overall_green_OneCol_b
+SC: http://localhost/lfl/slave2
+Redirecting to: http://localhost/lfl/slave2/cache/alexobviously_46_overall_green_OneCol_b.png
 
-alexobviously_15_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=15&type=overall&color=yellow&layout=OneCol&blackbg=on
+alexobviously_47_overall_yellow_OneCol_b
+Redirecting to: cache/alexobviously_47_overall_yellow_OneCol_b.png
 
-alexobviously_15_overall_yellow_TwoCols_b
-Rand: 1, Host:
-
-alexobviously_16_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=16&type=overall&color=yellow&layout=OneCol&blackbg=on
-
-alexobviously_16_overall_yellow_TwoCols_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=16&type=overall&color=yellow&layout=TwoCols&blackbg=on
-
-alexobviously_17_overall_yellow_OneCol_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=17&type=overall&color=yellow&layout=OneCol&blackbg=on
-
-alexobviously_17_overall_yellow_TwoCols_b
-Rand: 1, Host:
-
-alexobviously_18_overall_yellow_OneCol_b
-Rand: 0, Host:
-
-alexobviously_18_overall_yellow_TwoCols_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=18&type=overall&color=yellow&layout=TwoCols&blackbg=on
-
-alexobviously_19_overall_yellow_OneCol_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=19&type=overall&color=yellow&layout=OneCol&blackbg=on
-
-alexobviously_19_overall_yellow_TwoCols_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=19&type=overall&color=yellow&layout=TwoCols&blackbg=on
-
-alexobviously_20_overall_yellow_OneCol_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=20&type=overall&color=yellow&layout=OneCol&blackbg=on
-
-alexobviously_20_overall_yellow_TwoCols_b
-Rand: 0, Host:
-
-alexobviously_21_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=21&type=overall&color=yellow&layout=OneCol&blackbg=on
-
-alexobviously_21_overall_yellow_TwoCols_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=21&type=overall&color=yellow&layout=TwoCols&blackbg=on
-
-alexobviously_22_overall_yellow_OneCol_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=22&type=overall&color=yellow&layout=OneCol&blackbg=on
-
-alexobviously_22_overall_yellow_TwoCols_b
-Rand: 0, Host:
-
-alexobviously_23_overall_yellow_OneCol_b
-Rand: 2, Host:http://localhost/lfl/slave
-Redirecting to: http://localhost/lfl/slave/banner.php?user=alexobviously&nb=23&type=overall&color=yellow&layout=OneCol&blackbg=on
-
-alexobviously_23_overall_yellow_TwoCols_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=23&type=overall&color=yellow&layout=TwoCols&blackbg=on
-
-alexobviously_24_overall_yellow_OneCol_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=24&type=overall&color=yellow&layout=OneCol&blackbg=on
-
-alexobviously_24_overall_yellow_TwoCols_b
-Rand: 0, Host:
-
-alexobviously_25_overall_yellow_OneCol_b
-Rand: 1, Host:
-
-alexobviously_25_overall_yellow_TwoCols_b
-Rand: 3, Host:http://localhost/lfl/slave2
-Redirecting to: http://localhost/lfl/slave2/banner.php?user=alexobviously&nb=25&type=overall&color=yellow&layout=TwoCols&blackbg=on
+alexobviously_47_overall_lightblue_TwoCols_b
+Redirecting to: cache/alexobviously_47_overall_lightblue_TwoCols_b.png

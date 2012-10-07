@@ -41,8 +41,16 @@ function clearlist() {
 function bans() {
 	ajax("?c=bans", consadd);
 }
+var ana;
+function startana() {
+	ana = setInterval(function(){ajax("?c=ana",consadd)},1000);
+}
+function stopana() {
+	clearInterval(ana);
+}
 function enter() {
 	var command = document.getElementById("comm").value;
+	document.getElementById("comm").value = "";
 	var c = command.split(" ");
 	if(c.length==1)
 	{
@@ -50,8 +58,29 @@ function enter() {
 		ajax("?c="+c[0],consadd);
 	}
 	else if(c.length==2)
+	{
+		if(c[0]=="start")
+		{
+			switch(c[1])
+			{
+				case "ana":
+					startana();
+					break;
+			}
+			return;
+		}
+		if(c[0]=="stop")
+		{
+			switch(c[1])
+			{
+				case "ana":
+					stopana();
+					break;
+			}
+			return;
+		}
 		ajax("?c="+c[0]+"&v="+c[1],consadd);
-	document.getElementById("comm").value = "";
+	}
 }
 document.onkeypress = keyPress;
 

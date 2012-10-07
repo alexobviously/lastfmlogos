@@ -60,7 +60,7 @@ class TwoColumnsLayout implements Layout {
 			
 			$a = Artists::getArtistByName($name);
 			
-			if($a != null) //Artist is found
+			if($a) //Artist is found
 			{
 				$image = Artists::imageFromArtist($a);
 				
