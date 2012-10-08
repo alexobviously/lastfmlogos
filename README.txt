@@ -42,4 +42,14 @@ To create the password file use the following command.
 
 ## Distributed Computing
 This script now supports a distributed computing, implemented due to high load on the lastfmlogos.info server. If you have several servers that you want to distribute the load across then this is now possible with the master/slave system.
-The settings for this are in classes/Slaves.php. On your master server (the one that will handle user requests), set SERVER_TYPE = 1, and 
+IF YOU DON'T KNOW WHAT THIS IS, DON'T USE IT!
+The settings for this are in classes/Slaves.php. 
+* On your master server (the one that will handle user requests), set SERVER_TYPE = 1, and ENABLE_SLAVES = true.
+* On your slave server(s) set SERVER_TYPE = 2
+* You need to add each of your slave servers to the slave array in your MASTER's Slaves.php. For example, if you have a slave with the script installed at http://www.example.com/bandlogos and one at http://www.somewhere.net you would write the following:
+	$slave_array = array(
+				array("url"=>"http://www.example.com/bandlogos","weight"=>1),
+				array("url"=>"http://www.somewhere.net","weight"=>1)
+				);
+Notice that no trailing forward slash is added after the URL.
+* Weight: this allows you to distribute the load unevenly across several servers. For example, say you have one slave and want your master server to handle three times as many requests as the slave, set MASTER_WEIGHT = 3 and the slave's weight to 1.
