@@ -172,10 +172,31 @@ function clearrequests()
 	Artists::clearRequests();
 	echo "Requests cleared";
 }
-function slaves()
+function slaves($slaves)
 {
 	if(ENABLE_SLAVES)
-		echo("Slaves are enabled on this server");
+	{
+		echo("Slaves are enabled on this server||Master weight: ".MASTER_WEIGHT."||");
+		foreach($slaves as $slave)
+		{
+			$sstatus = slaveStatus($slave);
+			switch($sstatus){
+				case "InvalidAuth":
+					$m = "Invalid Authorisation Keys";
+					break;
+				case "NoCommand":
+					$m = "All Okay";
+					break;
+				case "E404":
+					$m = "Error 404";
+					break;
+				default:
+					$m = "Unknown";
+					break;
+			}
+			echo("Slave ".$slave['url'].", Weight: ".$slave['weight'].", Status: ".$m."||");
+		}
+	}
 	else echo("Slaves are disabled on this server");
 }
 function _emptySlaveCache($slaves)
@@ -184,7 +205,13 @@ function _emptySlaveCache($slaves)
 	{
 		$cl = emptySlaveCache($slaves);
 		echo("Deleted ".$cl[0]." entries from slavecache table||");
-		foreach($cl[1] as $_cl) echo("Cleared ".$_cl[1]." banners on slave ".$_cl[0]."||");
+		foreach($cl[1] as $_cl)
+		{
+			if($_cl[1]=="InvalidAuth")
+				echo("Invalid authorisation keys on slave ".$_cl[0]."||");
+			else
+				echo("Deleted ".$_cl[1]." banners on slave ".$_cl[0]."||");
+		}
 	}
 	else echo("Slaves are disabled on this server");
 }
@@ -227,7 +254,7 @@ switch($c)
 		clearrequests();
 		break;
 	case "slaves":
-		slaves();
+		slaves($slaves);
 		break;
 	case "emptyslavecache":
 	case "esc":

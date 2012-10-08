@@ -1,7 +1,7 @@
 <?php
 include_once('classes/Config.class.php');
 include_once('classes/Artists.class.php');
-for($i=40;$i<=50;$i++)
+for($i=1;$i<=10;$i++)
 {
 	echo('<img src="http://localhost/lfl/banner.php?user=alexobviously&nb='.$i.'&type=overall&color=yellow&layout=OneCol&blackbg=on">');
 	echo('<img src="http://localhost/lfl/banner.php?user=alexobviously&nb='.$i.'&type=overall&color=lightblue&layout=TwoCols&blackbg=on">');

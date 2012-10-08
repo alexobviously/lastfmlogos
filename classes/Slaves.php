@@ -10,9 +10,14 @@ $slave_array = array(
 			array("url"=>"http://localhost/lfl/slave2","weight"=>1)
 			);
 			
+//Authorisation
+const AUTH1 = "banana"; // Make sure these two codes are the same on your slaves
+const AUTH2 = "8xcme02a";
+			
 //---------------
 // Code
 //---------------
+//define("ENABLE_SLAVES",(SERVER_TYPE==1&&$ENABLE_SLAVES)?true:false);
 if(ENABLE_SLAVES)
 	$slaves = $slave_array;
 else $slaves = array();
@@ -53,8 +58,16 @@ function emptySlaveCache($_s)
 	$db->execQuery($sql,array());
 	$_cl[1] = array();
 	foreach($_s as $slave)
-		$_cl[1][] = array($slave['url'],file_get_contents($slave['url'].'/ec.php'));
+		$_cl[1][] = array($slave['url'],file_get_contents($slave['url'].'/remote.php?a='.AUTH1."&b=".AUTH2."&c=ec"));
 	return $_cl;
+}
+function slaveStatus($slave)
+{
+	$head = get_headers($slave['url'].'/remote.php?a='.AUTH1."&b=".AUTH2, 1);
+	if(strpos($head[0],"404")===false)
+		$m = file_get_contents($slave['url'].'/remote.php?a='.AUTH1."&b=".AUTH2);
+	else $m = "E404";
+	return $m;
 }
 
 /*print_r($hosts);

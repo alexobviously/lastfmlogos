@@ -92,7 +92,7 @@ if(file_exists($cachefile))
 }
 
 //Slaves
-if(ENABLE_SLAVES)
+if(ENABLE_SLAVES&&SERVER_TYPE==1)
 {
 	//Is there a cached version of the banner on a slave server?
 	if(($sc=checkSlaveCache($_ban)))
@@ -109,7 +109,7 @@ if(ENABLE_SLAVES)
 	fwrite($_fh,"\nRand: ".$h.", Host:".$hosts[$h]);
 	if($hosts[$h]!=false)
 	{
-		fwrite($_fh,"\nRedirecting to: ".$hosts[$h]."/banner.php?user=".$user."&nb=".$nb."&type=".$type."&color=".$color."&layout=".$layout.($bbg?"&blackbg=on":""));
+		fwrite($_fh,"\nRedirecting to: (n) ".$hosts[$h]."/banner.php?user=".$user."&nb=".$nb."&type=".$type."&color=".$color."&layout=".$layout.($bbg?"&blackbg=on":""));
 		fclose($_fh);
 		header("Location: ".$hosts[$h]."/banner.php?user=".$user."&nb=".$nb."&type=".$type."&color=".$color."&layout=".$layout.($bbg?"&blackbg=on":""));
 		addSlaveCache($hosts[$h],$_ban);
