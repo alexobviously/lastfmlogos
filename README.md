@@ -10,6 +10,7 @@
 
 ## Usage
 * To add new logos, simply put the image files in your logos folder. JPG, PNG and GIF are supported. Make sure the width of each logo is 150-160px and that they are black and white.
+* The filename of the logo must be exactly the same as the band name is in the URL of their page on last.fm. For example, say you want to add the logo of Four Year Strong. Find them on last.fm and look at the url: http://www.last.fm/music/Four+Year+Strong, so the name of the logo must be Four+Year+Strong.png (or .jpg or .gif).
 * To update users' banners, click Empty Cache in admin, or delete all of the images in the cache folder manually.
 * Visit admin.php for more functions, including banning. There are instructions on the page.
 

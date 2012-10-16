@@ -73,6 +73,7 @@ class OneColumnLayout implements Layout {
 			}
 			else
 			{
+				_log("Logo not found: ".$name,3);
 				if(Config::ENABLE_REQUESTS) Artists::requestArtist($name);
 			}
 		}

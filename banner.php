@@ -21,7 +21,6 @@ if(in_array(strtolower($_GET['user']),$bans))
 	header("Location: banned.png");
 	exit;
 }
-
 //BANNER GENERATION LIMITING
 $start = microtime(true);
 $curgen = Config::MAX_GENERATIONS+1;
@@ -80,13 +79,10 @@ if(!($layout == 'OneCol' || $layout == 'TwoCols'))
 	$layout = Config::DEFAULT_BANNER_LAYOUT;
 	
 //Is there a cached version of the banner on this server?
-$_fh = fopen("log.txt","a");
 $_ban = $user.'_'.$nb.'_'.$type.'_'.$color.'_'.$layout.($bbg?"_b":"");
 $cachefile = 'cache/'.$_ban.'.png';
-fwrite($_fh,"\n\n".$_ban);
 if(file_exists($cachefile))
 {
-	fwrite($_fh,"\nRedirecting to: ".$cachefile);
 	header("Location: ".$cachefile);
 	exit;
 }
@@ -97,26 +93,19 @@ if(ENABLE_SLAVES&&SERVER_TYPE==1)
 	//Is there a cached version of the banner on a slave server?
 	if(($sc=checkSlaveCache($_ban)))
 	{
-		fwrite($_fh,"\nSC: ".($sc=checkSlaveCache($_ban)));
-		fwrite($_fh,"\nRedirecting to: ".$sc."/cache/".$_ban.".png");
-		fclose($_fh);
 		header("Location: ".$sc."/cache/".$_ban.".png");
 		exit;
 	}
 	
 	//Pick a host to generate the new banner on
 	$h = rand(0,$total_weight-1);
-	fwrite($_fh,"\nRand: ".$h.", Host:".$hosts[$h]);
 	if($hosts[$h]!=false)
 	{
-		fwrite($_fh,"\nRedirecting to: (n) ".$hosts[$h]."/banner.php?user=".$user."&nb=".$nb."&type=".$type."&color=".$color."&layout=".$layout.($bbg?"&blackbg=on":""));
-		fclose($_fh);
 		header("Location: ".$hosts[$h]."/banner.php?user=".$user."&nb=".$nb."&type=".$type."&color=".$color."&layout=".$layout.($bbg?"&blackbg=on":""));
 		addSlaveCache($hosts[$h],$_ban);
 		exit;
 	}
 }
-fclose($_fh);
 
 ////Cache initialisation
 //Mostly obsolete with new file and slave caching but I'll leave it here for now

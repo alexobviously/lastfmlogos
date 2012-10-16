@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL);
+error_reporting(0);
 $_PATH['classes'] = 'classes/';
 include_once($_PATH['classes'].'Artists.class.php');
 include_once($_PATH['classes'].'Config.class.php');
@@ -207,10 +207,17 @@ function _emptySlaveCache($slaves)
 		echo("Deleted ".$cl[0]." entries from slavecache table||");
 		foreach($cl[1] as $_cl)
 		{
-			if($_cl[1]=="InvalidAuth")
-				echo("Invalid authorisation keys on slave ".$_cl[0]."||");
-			else
-				echo("Deleted ".$_cl[1]." banners on slave ".$_cl[0]."||");
+			switch($_cl[1]){
+				case "InvalidAuth":
+					echo("Invalid authorisation keys on slave ".$_cl[0]."||");
+					break;
+				case "E404":
+					echo("Error 404 on slave ".$_cl[0]);
+					break;
+				default:
+					echo("Deleted ".$_cl[1]." banners on slave ".$_cl[0]."||");
+					break;
+			}
 		}
 	}
 	else echo("Slaves are disabled on this server");
@@ -263,6 +270,11 @@ switch($c)
 	case "analysis":
 	case "ana":
 		analysis();
+		break;
+	case "clearlog":
+	case "cl":
+		clear_log();
+		echo("Log cleared");
 		break;
 	case "console":
 		adminpage();

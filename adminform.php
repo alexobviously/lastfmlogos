@@ -25,31 +25,9 @@ function ajax(url, callbackFunction)
 	request.send();
 }
 
-function emptycache() {
-	ajax("?c=emptycache", consadd);
-}
-function emptyslavecache() {
-	ajax("?c=esc", consadd);
-}
-function filldb() {
-	consadd("Filling Artists Database. Please be patient, this could take some time.");
-	ajax("?c=filldb", consadd);
-}
-function clearlist() {
-	ajax("?c=clearlist", consadd);
-}
-function bans() {
-	ajax("?c=bans", consadd);
-}
-var ana;
-function startana() {
-	ana = setInterval(function(){ajax("?c=ana",consadd)},1000);
-}
-function stopana() {
-	clearInterval(ana);
-}
-function enter() {
-	var command = document.getElementById("comm").value;
+var running = Array();
+function enter(command) {
+	//var command = document.getElementById("comm").value;
 	document.getElementById("comm").value = "";
 	var c = command.split(" ");
 	if(c.length==1)
@@ -64,7 +42,7 @@ function enter() {
 			switch(c[1])
 			{
 				case "ana":
-					startana();
+					running[c[1]] = setInterval(function(){ajax("?c="+c[1],consadd)},1000);
 					break;
 			}
 			return;
@@ -74,7 +52,7 @@ function enter() {
 			switch(c[1])
 			{
 				case "ana":
-					stopana();
+					clearInterval(running[c[1]]);
 					break;
 			}
 			return;
@@ -88,7 +66,7 @@ function keyPress(e)
 {
 	var x = e || window.event;
 	var key = (x.keyCode || x.which);
-    if(key == 13 || key == 3) enter();
+    if(key == 13 || key == 3) enter(document.getElementById("comm").value);
 }
 function getComplete(text)
 {
@@ -104,7 +82,7 @@ function help()
 }
 </script>
 <title>Lastfmlogos Admin Page</title>
-<button onclick="emptycache()">Empty Cache</button> <button onclick="emptyslavecache()">Empty Cache on Slaves</button> <button onclick="clearlist()">Clear Artists List</button> <button onclick="filldb()">Fill Artists List</button> <button onclick="bans()">List Banned Users</button>
+<button onclick="enter('ec')">Empty Cache</button> <button onclick="enter('esc')">Empty Cache on Slaves</button> <button onclick="enter('clearlist')">Clear Artists List</button> <button onclick="enter('filldb')">Fill Artists List</button> <button onclick="enter('bans')">List Banned Users</button> <button onclick="enter('cr')">Clear Requests</button>
 <br />
 <br />
 <input name="comm" type="text" id="comm" size="64" />

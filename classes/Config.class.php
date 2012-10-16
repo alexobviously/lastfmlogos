@@ -2,6 +2,7 @@
 //include_once("db/MySQLIDB.class.php");
 include_once("db/MySQLNative.class.php");
 include_once("Slaves.php");
+include_once("Log.php");
 
 date_default_timezone_set('America/Montreal');
 /**
@@ -42,6 +43,10 @@ class Config {
 	
 	//Enable requested logos functionality
 	const ENABLE_REQUESTS = true;
+	
+	//Logging
+	const ENABLE_LOG = true;
+	const LOG_LEVEL = 3; // 0 = Nothing, 1 = Critical things (recommended), 2 = All everyday errors, 3 = Debugging
 }
 
 //Config::$dbInstance = MySQLIDB::getInstance();

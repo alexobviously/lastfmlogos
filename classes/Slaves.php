@@ -58,7 +58,12 @@ function emptySlaveCache($_s)
 	$db->execQuery($sql,array());
 	$_cl[1] = array();
 	foreach($_s as $slave)
-		$_cl[1][] = array($slave['url'],file_get_contents($slave['url'].'/remote.php?a='.AUTH1."&b=".AUTH2."&c=ec"));
+	{
+		$head = get_headers($slave['url'].'/remote.php');
+		if(strpos($head[0],"404")===false)
+			$_cl[1][] = array($slave['url'],file_get_contents($slave['url'].'/remote.php?a='.AUTH1."&b=".AUTH2."&c=ec"));
+		else $_cl[1][] = array($slave['url'],"E404");
+	}
 	return $_cl;
 }
 function slaveStatus($slave)
