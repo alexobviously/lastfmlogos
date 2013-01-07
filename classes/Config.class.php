@@ -30,8 +30,11 @@ class Config {
 	//Delay for browser cache (in sec.)
 	const CACHE_DELAY = 432000; //(3600 * 24 * 5)
 	
+	//Homepage URL
+	const HOMEPAGE = "http://127.0.0.1";
+	
 	//Banner Location (use by the link.php page)
-	const LINK_BANNER = "http://localhost/lfl/banner.php";
+	const LINK_BANNER = "http://127.0.0.1/lfl/banner.php";
 	
 	//Header size
 	const WATERMARK_W = 128;

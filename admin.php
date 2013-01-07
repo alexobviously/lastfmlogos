@@ -1,5 +1,11 @@
 <?php
 error_reporting(0);
+include('auth.php');
+if(!$isadmin)
+{
+	echo("Hey, you're not an admin!");
+	exit;
+}
 $_PATH['classes'] = 'classes/';
 include_once($_PATH['classes'].'Artists.class.php');
 include_once($_PATH['classes'].'Config.class.php');
